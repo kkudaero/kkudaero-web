@@ -6,6 +6,7 @@ kkudaero-web에서 작업하는 코딩 에이전트가 따라야 하는 규칙�
 
 ## 1. 프로젝트 정보
 
+- 제품 개요와 1단계 기능은 `docs/PRODUCT.md`에 있습니다. 작업 전에 읽습니다.
 - Next.js(App Router), TypeScript `strict` 모드, React 서버 컴포넌트 기본
 - 패키지 매니저: pnpm (npm, yarn을 쓰지 않습니다)
 - 스타일: Tailwind CSS
