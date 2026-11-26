@@ -230,7 +230,8 @@ export function CustomsStatusCard({ trackingNumber }: CustomsStatusCardProps) {
 | `fix` | 버그 수정 |
 | `refactor` | 동작을 바꾸지 않는 구조 개선 |
 | `hotfix` | 즉시 고쳐야 하는 치명적인 버그 |
-| `chore` | 설정, 의존성 등 기타 작업 |
+| `setting` | 프로젝트 초기 세팅, 빌드·린트·배포 등 환경 설정 |
+| `chore` | 의존성 업데이트 등 기타 작업 |
 
 API 연결 작업은 `feat`를 쓰고, 이슈와 PR에 `API` 라벨을 붙입니다.
 
