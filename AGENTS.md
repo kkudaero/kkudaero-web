@@ -6,6 +6,7 @@ kkudaero-web에서 작업하는 코딩 에이전트가 따라야 하는 규칙�
 
 ## 1. 프로젝트 정보
 
+- 제품 개요와 1단계 기능은 `docs/PRODUCT.md`에 있습니다. 작업 전에 읽습니다.
 - Next.js(App Router), TypeScript `strict` 모드, React 서버 컴포넌트 기본
 - 패키지 매니저: pnpm (npm, yarn을 쓰지 않습니다)
 - 스타일: Tailwind CSS
@@ -229,7 +230,8 @@ export function CustomsStatusCard({ trackingNumber }: CustomsStatusCardProps) {
 | `fix` | 버그 수정 |
 | `refactor` | 동작을 바꾸지 않는 구조 개선 |
 | `hotfix` | 즉시 고쳐야 하는 치명적인 버그 |
-| `chore` | 설정, 의존성 등 기타 작업 |
+| `setting` | 프로젝트 초기 세팅, 빌드·린트·배포 등 환경 설정 |
+| `chore` | 의존성 업데이트 등 기타 작업 |
 
 API 연결 작업은 `feat`를 쓰고, 이슈와 PR에 `API` 라벨을 붙입니다.
 
@@ -242,7 +244,8 @@ API 연결 작업은 `feat`를 쓰고, 이슈와 PR에 `API` 라벨을 붙입니
 
 ### 커밋
 
-- 형식: `<유형>: #<이슈번호> <한글 요약>` (예: `feat: #2 통관 상태 카드 구현`)
+- 형식: `<유형>: #<이슈번호> <영어 요약>` (예: `feat: #2 add customs status card`)
+- 요약은 영어 문장으로 쓰고, 소문자 동사 원형으로 시작하며 마침표를 붙이지 않습니다.
 - 제목은 50자 이내로 씁니다. 필요하면 본문에 자세히 적습니다.
 - 목적이 다른 변경은 커밋을 나눕니다.
 - 빌드가 실패하는 상태로 커밋하지 않습니다.
