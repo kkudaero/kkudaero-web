@@ -1,16 +1,23 @@
 @import 'tailwindcss';
+@import 'pretendard/dist/web/variable/pretendardvariable-dynamic-subset.css';
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --font-sans:
+    'Pretendard Variable', Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-brand: #ff6b4a;
+  --color-on-brand: #ffffff;
+  --color-content-primary: #1a1d23;
+  --color-content-secondary: #6b7280;
+  --color-content-tertiary: #9ca3af;
+  --color-line: #e6e8ec;
+  --color-surface: #ffffff;
+  --color-canvas: #f6f7f9;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--color-surface);
+  color: var(--color-content-primary);
+  letter-spacing: -0.01em;
+  line-height: 1.4;
 }
